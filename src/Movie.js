@@ -39,6 +39,7 @@ class Movie extends Component {
                 <div className="bg-light-green dib br3 ma2 grow bw2 shadow-5">
                   <img alt="unable to load" src={pictures.Poster} />
                   <p className="tc">{pictures.Title}</p>
+                  {/* <p className="tc">{pictures.Plot}</p> */}
                 </div>
               ) : (
                 <div>{error && "Error loading picture"}</div>

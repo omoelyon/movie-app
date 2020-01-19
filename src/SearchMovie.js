@@ -16,7 +16,7 @@ class SearchMovie extends Component {
         this.setState({ pictures: res.data.Search, loading: false });
       })
       .catch(err => {
-        // console.log("catch console", err);
+        console.log("catch console", err);
         this.setState({ error: err.data, loading: false });
       });
   }
